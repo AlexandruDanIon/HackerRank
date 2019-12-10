@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beautiful Days at the Movies", "Beautiful Days at the Movies.csproj", "{340BF866-B1EB-4950-A06D-443C95162F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{340BF866-B1EB-4950-A06D-443C95162F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340BF866-B1EB-4950-A06D-443C95162F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340BF866-B1EB-4950-A06D-443C95162F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340BF866-B1EB-4950-A06D-443C95162F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADF50CB0-241D-4222-9C57-16C1CEA87E94}
+	EndGlobalSection
+EndGlobal

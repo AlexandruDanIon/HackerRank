@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forming a Magic Square", "Forming a Magic Square.csproj", "{AFDFD789-B4AE-4205-B62E-FF9798E97FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFDFD789-B4AE-4205-B62E-FF9798E97FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDFD789-B4AE-4205-B62E-FF9798E97FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDFD789-B4AE-4205-B62E-FF9798E97FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDFD789-B4AE-4205-B62E-FF9798E97FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39D678C2-687F-4E56-AA61-57CA4F3C0EFA}
+	EndGlobalSection
+EndGlobal
