@@ -11,26 +11,33 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
+using System.Diagnostics;
 
 internal class Solution
 {
     // Complete the findDigits function below.
     private static int FindDigits(int n)
     {
-        return 0;
+        return n.ToString().ToCharArray().Where(o => n % char.GetNumericValue(o) == 0).Count();
     }
 
     private static void Main(string[] args)
     {
-        int t = Convert.ToInt32(Console.ReadLine());
 
-        for (int tItr = 0; tItr < t; tItr++)
+        var sw = new Stopwatch();
+        sw.Start();
+        for (int i = 0; i < 1000000; i++)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
 
-            int result = FindDigits(n);
+            int result = FindDigits(123656416);
 
             Console.WriteLine(result);
+
         }
+        sw.Stop();
+
+        Console.WriteLine(Environment.NewLine + " " + sw.ElapsedMilliseconds);
+
+        Console.ReadKey();
     }
 }
