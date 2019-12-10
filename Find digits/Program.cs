@@ -24,16 +24,19 @@ internal class Solution
     private static void Main(string[] args)
     {
 
+        int t = Convert.ToInt32(Console.ReadLine());
         var sw = new Stopwatch();
         sw.Start();
-        for (int i = 0; i < 1000000; i++)
-        {
 
-            int result = FindDigits(123656416);
+        for (int tItr = 0; tItr < t; tItr++)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            int result = FindDigits(n);
 
             Console.WriteLine(result);
-
         }
+
         sw.Stop();
 
         Console.WriteLine(Environment.NewLine + " " + sw.ElapsedMilliseconds);
