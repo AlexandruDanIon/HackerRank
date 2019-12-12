@@ -41,11 +41,8 @@ class Solution
             curTopics += (a[i] == '1' || b[i] == '1') ? 1 : 0;
         }
 
-        if (curTopics == maxTopics)
-        {
-            teams++;
-        }
-
+        teams += curTopics == maxTopics ? 1 : 0;
+        
         if (curTopics > maxTopics)
         {
             maxTopics = curTopics;
