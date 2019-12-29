@@ -11,6 +11,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
+using System.Diagnostics;
 
 class Solution
 {
@@ -19,58 +20,59 @@ class Solution
     static int[] acmTeam(string[] topic)
     {
         var r = new int[2] { 0, 0 };
+        var l = topic.Length;
+        var l2 = topic[0].Length;
 
-        for (int i = 0; i < topic.Length; i++)
+        for (int i = 0; i < l; i++)
         {
-            for (int j = i+1; j < topic.Length; j++)
+            for (int j = i + 1; j < l; j++)
             {
-                Add(topic[i], topic[j], ref r[0], ref r[1]);
+                int curTopics = 0;
+
+                for (int k = 0; k < l2; k++)
+                {
+
+                    curTopics += (topic[i][k] == '1' || topic[j][k] == '1') ? 1 : 0;
+                }
+
+                r[1] += curTopics == r[0] ? 1 : 0;
+
+                if (curTopics > r[0])
+                {
+                    r[0] = curTopics;
+                    r[1] = 1;
+                }
             }
         }
 
         return r;
     }
 
-    static void Add(string a, string b, ref int maxTopics, ref int teams)
-    {
-        int curTopics = 0;
-
-        for (int i = 0; i < a.Length; i++)
-        {
-
-            curTopics += (a[i] == '1' || b[i] == '1') ? 1 : 0;
-        }
-
-        teams += curTopics == maxTopics ? 1 : 0;
-        
-        if (curTopics > maxTopics)
-        {
-            maxTopics = curTopics;
-            teams = 1;
-        }
-
-    }
-
     static void Main(string[] args)
     {
+        string[] nm, topic;
+        int n, m;
 
-        string[] nm = Console.ReadLine().Split(' ');
-
-        int n = Convert.ToInt32(nm[0]);
-
-        int m = Convert.ToInt32(nm[1]);
-
-        string[] topic = new string[n];
-
-        for (int i = 0; i < n; i++)
+        using (StreamReader reader = new StreamReader(@"C:\input.txt"))
         {
-            string topicItem = Console.ReadLine();
-            topic[i] = topicItem;
+            nm = reader.ReadLine().Split(' ');
+            n = Convert.ToInt32(nm[0]);
+            m = Convert.ToInt32(nm[1]);
+            topic = new string[n];
+            for (int i = 0; i < n; i++)
+            {
+                string topicItem = reader.ReadLine();
+                topic[i] = topicItem;
+            }
         }
 
+        var sw = new Stopwatch();
+        sw.Start();
         int[] result = acmTeam(topic);
+        sw.Stop();
 
-        Console.WriteLine(string.Join("\n", result));
+
+        Console.WriteLine(string.Join("\n", result) + Environment.NewLine + sw.ElapsedMilliseconds);
 
         Console.ReadKey();
     }

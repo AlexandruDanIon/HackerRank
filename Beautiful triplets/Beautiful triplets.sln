@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beautiful triplets", "Beautiful triplets.csproj", "{B52103A1-8816-4FAE-96E5-D4362EBF3C6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B52103A1-8816-4FAE-96E5-D4362EBF3C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52103A1-8816-4FAE-96E5-D4362EBF3C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52103A1-8816-4FAE-96E5-D4362EBF3C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52103A1-8816-4FAE-96E5-D4362EBF3C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C216D02B-0369-4452-BB4C-0CFDFB057F65}
+	EndGlobalSection
+EndGlobal
